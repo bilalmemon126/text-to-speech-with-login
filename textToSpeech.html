@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+  <link rel="stylesheet" href="textToSpeech.css">
+</head>
+<body>
+  <button id="logout">LogOut</button>
+  <div id="container">
+    <div id="main">
+      <textarea id="textArea" placeholder="Enter Text To Speech"></textarea>
+      <div id="audioBox">
+        <span class="material-symbols-rounded" id="play">
+          play_circle
+        </span>
+
+        <span class="material-symbols-rounded hide" id="pause">
+          pause_circle
+        </span>
+
+        <span class="material-symbols-rounded" id="graphic_eq">
+          graphic_eq
+        </span>
+        
+        <span class="material-symbols-rounded" id="stop">
+          stop_circle
+        </span>
+        <button id="speak" onclick="textToSpeak()">Speak <div id="loading"></div></button>
+        <audio controls id="audio" autoplay hidden></audio>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="textToSpeech.js"></script>
+</body>
+</html>
