@@ -21,8 +21,8 @@ html{
     border-radius: 15px;
     box-shadow: 0 0 10px rgb(106, 106, 106);
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 30px 0;
 }
 #box h1{
@@ -88,4 +88,26 @@ html{
 #box a{
     color: #8b5dcf;
     font-size: 0.8rem;
+}
+
+
+@media only screen and (max-width: 576px){
+    #box{
+        width: 90%;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    #box{
+        width: 70%;
+    }
+}
+@media only screen and (min-width: 767px) and (max-width: 991px){
+    #box{
+        width: 60%;
+    }
+}
+@media only screen and (min-width: 991px) and (max-width: 1200px){
+    #box{
+        width: 40%;
+    }
 }
